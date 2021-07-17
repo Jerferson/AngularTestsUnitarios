@@ -54,7 +54,6 @@ export class ContadorComponent implements OnInit {
   }
 
   onFocus(event: FocusEvent) {
-    console.log(event)
     this.foco = true;
     event.preventDefault();
     event.stopPropagation();

@@ -5,18 +5,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FilmesComponent } from './filmes/filmes.component';
 import { ContadorComponent } from './contador/contador.component';
+import { TodoComponent } from './todo/todo.component';
+import { HttpClient } from '@angular/common/http';
+import { TodoService } from './todo/todo.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     FilmesComponent,
-    ContadorComponent
+    ContadorComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClient
   ],
-  providers: [],
+  providers: [
+    TodoService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
