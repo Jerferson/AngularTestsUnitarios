@@ -28,7 +28,6 @@ class MockHttp {
 describe('TodoService', () => {
   let http: HttpClient;
   let service: TodoService;
-  let store: Store;
 
 
   beforeEach(() => {
